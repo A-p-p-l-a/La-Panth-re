@@ -1,0 +1,14 @@
+# Normalisation d'URL
+RewriteEngine on
+
+# https sans www
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Cache de fichiers
+<FilesMatch "\.(css|js|webp|jpg|png|svg)$">
+Header set Cache-Control "max-age=31104000"
+</FilesMatch>
+
