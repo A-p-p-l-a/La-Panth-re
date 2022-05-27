@@ -1040,3 +1040,9 @@ h4 {
         text-align: center;
     }
 }
+
+.col-sm-4 ul li{
+
+    padding-top:24px;
+    padding-bottom: 24px;
+}
