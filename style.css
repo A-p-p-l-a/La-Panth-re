@@ -528,7 +528,7 @@ button {
 .showScrollTop {
     font-size:14px;
     opacity:1;
-    z-index:400
+    z-index:600
 }
 
 a[data-lightbox] {
@@ -652,7 +652,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
